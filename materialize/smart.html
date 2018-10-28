@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Campus</title>
+    <style>
+        .transparent {}
+
+        .tabs-vertical {
+            flex-direction: column !important;
+            height: 100%;
+        }
+
+        .tabs .indicator {
+            display: none;
+        }
+
+        .sidenav>ul {
+            height: 600px !important;
+        }
+
+        .sidenav>li {
+            height: 50px !important;
+            text-align: justify;
+        }
+
+        .tabs .tab a:hover,
+        .tabs .tab a.active {
+            background: gold !important;
+
+        }
+    </style>
+
+    <link rel="stylesheet" href="css/iconfont/material-icons.css">
+    <link rel="stylesheet" href="css/materialize.css">
+
+</head>
+
+<body class="white darken-3">
+    <nav class="nany blue darken-2 ">
+        <div class="nav-wrapper">
+            <div class=" row ">
+                <div class="col s12 m6 l12">
+                    <a href=" #" class="brand-logo amber-text left"><i class="material-icons prefix">notifications</i>
+                        Smart Campus</a>
+                    <a href="#" class="sidenav-trigger right show-on-large" data-target="nav">
+                        <i class="material-icons amber-text">menu</i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- <div class="row">
+        <div class="col s12   grey darken-5 ">
+            <ul class="tabs transparent">
+                <li class="tab col s3 black-text"><a href="#test1">Student portal</a></li>
+                <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                <li class="tab col s3 disabled"><a href="#test3">Disabled Tab</a></li>
+                <li class="tab col s3"><a href="#test4">Test 4</a></li>
+            </ul>
+        </div>
+        <div id="portal" class="col s12 center">
+            <div class="row" id="login">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6 ">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+
+                    </div>
+                    <button class="btn  waves-effect waves-light" type="submit" name="action">Login
+                        <i class="material-icons right">send</i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+        <div id="map" class="col s12 center">
+            <div class="row" id="login">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6 ">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">First Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">lock</i>
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+
+                    </div>
+                    <button class="btn  waves-effect waves-light" type="submit" name="action">Login
+                        <i class="material-icons right">send</i>
+                    </button>
+
+                </form>
+            </div>
+        </div> -->
+
+    <div class="col l8 center" id="portal">
+        <h2>Portal</h2>
+    </div>
+
+    <div class="col l8 center" id="schedules">
+        <h2>Schedules</h2>
+    </div>
+
+    <div class="col l8 center" id="material">
+        <h2>Course Material</h2>
+    </div>
+
+    <div class="col l8 center" id="occupation">
+        <h2>Classroom Occupation</h2>
+    </div>
+
+    <div class="col l8 center" id="map">
+        <h2>Maps</h2>
+    </div>
+
+
+
+    <!-- Sidenav -->
+    <div class="row">
+        <ul class="sidenav aqua tabs tabs-vertical " id="nav">
+            <li class="col s12 tab "><a class="black-text" href="#portal"><i class="material-icons blue-text">account_circle</i>
+                </a></li>
+            <li class="col s12 tab "><a class="black-text" href=""><i class="material-icons blue-text">people</i>
+                    Student
+                    Portal</a></li>
+            <li class="col s12 tab"><a class="black-text" href="#schedules"><i class="material-icons blue-text">event_notes</i>
+                    Schedules</a></li>
+            <li class="col s12 tab"><a class="black-text" href="#material"><i class="material-icons blue-text">book</i>
+                    Course Material</a></li>
+            <li class="col s12 tab"><a class="black-text" href="#occupation"><i class="material-icons blue-text">room</i>
+                    Classroom
+                    Occupation</a></li>
+            <li class="col s12 tab"><a class="black-text" href="#map"><i class="material-icons blue-text">directions</i>
+                    Campus Map</a></li>
+        </ul>
+    </div>
+    <div class="fixed-action-btn  ">
+        <a class="btn-floating amber btn-large right  pulse waves-effect waves-light dark "><i class="
+            material-icons">notifications</i></a>
+        <ul>
+            <li><a class="btn-floating " onclick=""><i class="material-icons black-text">people</i> </a></li>
+            <li> <a class="btn-floating "><i class="material-icons black-text">event_notes</i></a> </li>
+            <li> <a class="btn-floating "><i class="material-icons aqua-text">book</i> </a></li>
+
+            <li><a class="btn-floating"><i class="material-icons aqua-text">room</i></a></li>
+        </ul>
+
+
+    </div>
+
+    <script src="js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+
+    </div>
+</body>
+
+</html>
